@@ -55,7 +55,7 @@ model = VGG16()  # VGG16 implémenté pae keras
 
 # Note : ImageNet peut classifier jusqu'à 1000 catégories différentes
 
-img = load_img("..\\resources\\cat.jpg", target_size=(224, 224))  # Chargement image, rescaling pour VGG16 (224,224)px
+img = load_img("..\\resources\\face.jpg", target_size=(224, 224))  # Chargement image, rescaling pour VGG16 (224,224)px
 img = img_to_array(img)  # Convertion de l'image en tableau numpy
 img = img.reshape((1, img.shape[0], img.shape[1], img.shape[2]))  # Crée une collection d'images
 img = preprocess_input(img)  # Prétaire l'image comme le veut VGG16
